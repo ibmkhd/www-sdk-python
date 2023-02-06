@@ -13,8 +13,8 @@ jobs:
       - name: Commit
         working-directory: ./sdk
         run: |
-          git config --global user.email "oss@expediagroup.com"
-          git config --global user.name "Expedia Group Open Source"
+          git config --global user.email "ibmkhd@yahoo.com"
+          git config --global user.name "ibrahim"
           go install resenje.org/casbab/cmd/casbab@latest
           key=$(`go env GOPATH`/bin/casbab kebab '${{github.event.inputs.name}}')
           git checkout -b "$key/${{github.event.inputs.version}}"
